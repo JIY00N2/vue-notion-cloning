@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 v-if="msg" class="message" @click="log">{{ msg }}</h1>
   <Hello />
 </template>
 
@@ -13,6 +13,11 @@ export default {
     return {
       msg: 'Hello webpack?',
     };
+  },
+  methods: {
+    log() {
+      window.addEventListener();
+    },
   },
 };
 </script>
