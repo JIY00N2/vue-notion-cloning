@@ -1,6 +1,19 @@
-<template></template>
+<template>
+  <h1>{{ msg }}</h1>
+  <Hello />
+</template>
 
 <script>
-export default {};
+import Hello from '~/components/Hello';
+
+export default {
+  components: {
+    Hello,
+  },
+  data() {
+    return {
+      msg: 'Hello Vue!',
+    };
+  },
+};
 </script>
-<style></style>
