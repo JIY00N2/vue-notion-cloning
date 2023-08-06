@@ -4,7 +4,7 @@ import Home from './Home';
 export default createRouter({
   history: createWebHistory(),
   scrollBehavior: () => ({ top: 0 }),
-  routers: [
+  routes: [
     {
       path: '/',
       component: Home,

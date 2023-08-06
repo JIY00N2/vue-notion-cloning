@@ -1,7 +1,7 @@
-import { createStore } from '~/store';
+import { createStore } from 'vuex';
 import message from './message';
 
-export default createStorage({
+export default createStore({
   modules: {
     message,
   },
