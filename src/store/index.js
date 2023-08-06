@@ -1,8 +1,8 @@
-import { createStore } from '~/store';
-import message from './message';
+import { createStore } from 'vuex';
+import workspace from './workspace';
 
-export default createStorage({
+export default createStore({
   modules: {
-    message,
+    workspace,
   },
 });
